@@ -34,125 +34,199 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
-.inner
     
-    margin: 0
-    padding: 0
+.inner
+    margin: 0 auto
 body
-    background: url('../img/fon.png')
-    background-repeat: no-repeat
-    background-positions: center
-    background-size: 100%
+    background-color: #d5d3d3
+    .wrapper
+        box-shadow: 0 0 20px 0 #000
+        max-width: 1200px
+        margin: 0 auto
+    
     .header
-        height: 1070px
+        background: url('../img/fon3.jpg')
+        background-size: contain
+        background-position: top center
+        height: 1022px
         .logo
-            h1
-                font-family: Roboto
-                color:  #000000
-                font-size: 28px /* Приближение из-за подстановки шрифтов */
-                font-weight: 700
-                line-height: 24px /* Приближение из-за подстановки шрифтов */
-                text-align: center
-                text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4)
-                margin-top: 65px
-                margin-left: 100px
+            img
+                margin-top: 50px
+                margin-left: 122px
         .phone
             display: inline-block
             img 
                 display: inline-block
-                margin-top: 40px
-                margin-left: 270px
+                margin-top: 24px
+                margin-left: 268px
+            &:hover img 
+                animation: 1s phone-shake
             span
                 font-size: 24px
                 font-weight: 300
+                font-family: roboto
             p
+                font-family: roboto
                 display: inline-block
                 text-align: center
                 float: right
-                margin-top: 40px
-                margin-right: 80px
-        .img_top_menu img 
-            position: absolute
-            bottom: -27px
-            left: -31px
+                margin-top: 30px
+                margin-right: 12px
         .top_menu
+            .img_top_menu img 
+                position: absolute
+                bottom: 355px
+                left: -1px
             ul
                 display: inline-flex
                 list-style: none
-                margin-left: 100px
-        .menu 
-            display: inline-flex
-            background-color:  #f39524
-            box-shadow: 1px 2px 1px 0px rgba(5, 4, 5, 0.24)
-            width: 100%
-            height: 70px
-            border-radius: 32px
-            margin-top: 26px
-            li 
-                margin-right: 17px
-                line-height: 65px
-                width: 110px
-                text-align: center
-                height: 70px
-                margin-top: -14px
-                color: #000
-                cursor: pointer
-                &:hover
-                    box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.5)
-                    border-bottom: 5px solid #000
-                    transition: .2s all
-                    color: #fff
-                    a
-                        text-underline: none
-            a 
-                color: #000
-                width: 110px
-                height: 70px
-                text-underline: none
-            input[type="search"]
-                padding: 11px
-                border: 0
-                border-radius: 30px
-            .search img
-                margin-left: -50px
-                cursor: pointer
-                &:hover
-                    transform: rotate(-20deg)
-                    transition: .5s all
-            .search 
-                padding: 12px
-
                 
+                padding: 0
+                margin: 0
+                margin-left: 110px
+            .menu 
+                display: inline-flex
+                background-color:  #f39524
+                box-shadow: 1px 2px 1px 0px rgba(5, 4, 5, 0.24)
+                width: 96%
+                margin-left: 42px
+                height: 84px
+                border-radius: 40px
+                li 
+                    margin-right: 0px
+                    line-height: 89px
+                    text-align: center
+                    height: 84px
+                    color: #000
+                    padding: 0 17px
+                    cursor: pointer
+                    position: relative
+                    transition: .2s all
+                    
+                    &:after,&:before
+                        opacity: 0
+                        content: ""
+                        display: block
+                        position: absolute
+                        transition: 0.5s all
+                    &:after
+                        width: 0
+                        
+                    &:before
+                        border: 5px solid transparent
+                        border-bottom: 5px solid #000
+                        bottom: 5px
+                        transition-delay: 0s
+                        transition-duration: .1s
+                        left: 50%
+                        margin-left: -5px
+                    &:hover
+                        box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.5),inset 0px 20px 40px -10px #fff
+                        
+                        &:after
+                            width: 115%
+                            left: -7.5%
+                            height: 5px
+                            background: #000
+                            bottom: 0
+                            opacity: 1
+                        &:before
+                            opacity: 1
+                            transition-duration: .5s
+                            transition-delay: 0.3s
+                        a
+                            text-underline: none
+                            color: #fff
+                            transition: .2s all
+                            
+                            
+                a 
+                    font-family: Roboto
+                    color:  #444343
+                    font-size: 17px
+                    font-weight: 500
+                    text-align: left
+                    text-decoration: none
+                input[type="search"]
+                    border: 0
+                    border-radius: 30px
+                    background-color:  #eeeeee
+                    box-shadow: 1px 2px 1px 0px rgba(5, 4, 5, 0.22);
+                    width: 206px
+                    text-indent: 20px
+                    height: 52px
+                    margin-left: 54px
+                    margin-top: 4px
+                .search img
+                    margin-left: -54px
+                    cursor: pointer
+                    &:hover
+                        transform: rotate(-20deg)
+                        transition: .5s all
+                .search 
+                    padding: 12px
+
+.text_fon
+    background: url('../img/1.png')
+    width: 50%
+    margin-top: 140px
+    padding-left: 20px
+    border-radius: 10px
+    h1
+        font-family: Roboto
+        color:  #ffffff
+        font-size: 48px
+        font-weight: 700
+        text-align: left
+        text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.35)
+                    
 .middle_buy 
-    margin-top: 110px
+    background: #fff
+    padding-top: 49px
+    padding-bottom: 53px
     .buy
-        div
-            display: inline-block
-            margin-right: 20px
+        div    
+            margin-right: 32px;
+            display: inline-block;
+            margin-top: 8px
+            width: 198px
+            position: relative
+            img
+                margin-left: 3px
+            &:last-child
+                margin-right: 0
             p 
+                font-family: Roboto
+                color: #1c1c1c
+                font-size: 16px
+                font-weight: 500
                 text-align: center
+                margin-top: 2px
             button 
                 background: #f39524
                 border: 0
-                padding: 12px 35px
-                margin-left: 30px
-                font-size: 12px
+                width: 183px
+                height: 50px
+                margin-left: 9px
+                font-size: 17px
+                margin-top: -12px
                 &:hover
                     border-bottom: 5px solid #000
                     transition: .2s all
                     color: #fff
+                    position: absolute
                     
 .region
     background: #efeeee
-    margin-top: 25px
-    height: 920px
+    margin-top: 0px
+    height: 980px
+    padding-top: 10px
     img
-            margin-bottom: 9px
-            margin-left: 79px
-            width: 959px
+            margin-bottom: 5px
+            margin-left: 110px
+            width: 916px
     .maps
-            margin-left: 25px
-            margin-top: 30px
+            margin-top: 33px
     .region_t
         h1
             font-family: Roboto
@@ -160,24 +234,28 @@ body
             font-size: 30px
             font-weight: 500
             line-height: 36px
+            margin-bottom: 35px
             text-align: center
     .region__text
         background-color: #fff
         width: 84%
-        margin-left: 80px
-        height: 250px
+        margin-left: 113px
+        height: 268px
+        padding-top: 9px
         div
             display: inline-block
-            margin-left: 15px
+            margin-left: 4px
             vertical-align: text-top
             font-family: roboto
             p
-                width: 453px
-                height: 29px
-                cursor: pointer
-                text-indent: 20px
-                line-height: 26px
-                margin-bottom: -11px
+                width: 449px
+                font-size: 18px
+                font-weight: 400
+                text-align: left
+                margin: 0
+                text-indent: 11px
+                line-height: 29px
+                margin-bottom: 7px
                 &:hover
                     background-color:  rgba(69, 69, 70, 0.4)
                     color: #fff
@@ -185,6 +263,7 @@ body
                 &:nth-child(odd) 
                     background-color:  rgba(69, 69, 70, 0.4)
     .galerey
+        padding-top: 8px
         h1
             font-family: Roboto
             color:  #454546
@@ -194,26 +273,29 @@ body
             text-align: center
         div
             width: 300px
-            margin-left: 490px
+            margin-left: 475px
+            margin-top: -5px
             a
                 font-family: Roboto
                 color:  #424243
-                font-size: 18px
+                font-size: 19px
                 font-weight: 300
                 line-height: 36px
                 text-align: center
                 text-decoration: none
                 border-bottom: 1px solid #000
-                margin-left: 25px
+                margin-left: 31px
                 &:hover
                     color:  #f39524
                     font-size: 18px
                     border-bottom: 1px solid #f39524
                     transition: .3s all
 .galerey__photo
+    background-color: #fff
+    padding-bottom: 39px
     .photo_g
-        margin-top: 8px;
-        margin-left: 96px;
+        margin-top: 41px
+        margin-left: 88px
         div
             margin-top: 5px
             img
@@ -223,18 +305,20 @@ body
                     transition: .4s all
                 
 .footer
-    background-color:  #333333
-    margin-top: 40px
+    background-color:  #0b0a0a
+    height: 329px
     .footer__nav
         div
             h1
-                margin-right: 20px;
+                margin-right: 20px
                 font-family: Roboto
                 color:  #ffffff
-                font-size: 18px
+                font-size: 19px
                 font-weight: 400
                 line-height: 36px
                 text-align: left
+                padding-top: 16px
+                margin-bottom: -11px
             p
                 font-family: Roboto
                 color:  #8f8e91
@@ -251,6 +335,7 @@ body
                 text-align: left
                 text-decoration: none
                 display: block
+                margin-top: 7px
                 &:hover
                     color:#fff
     
@@ -265,6 +350,9 @@ body
         line-height: 36px
         text-align: center
         line-height: 80px
-                    
+        text-indent: 100px
+
+
+        
 //ALWAYS END
 @import "media"
