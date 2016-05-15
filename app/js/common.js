@@ -24,6 +24,11 @@ $(function() {
 		});
 		return false;
 	});
-
+    $('.gallery-item').magnificPopup({
+      type: 'image',
+      gallery:{
+        enabled:true
+      }
+    });
 });
 
