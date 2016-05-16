@@ -405,15 +405,18 @@ body
         background-position: top center
         height: 1022px
         .logo
+            width: 50%
+            display: inline
             img
-                margin-top: 50px
-                margin-left: 122px
+                margin-top: 40px
+                margin-left: 167px
         .phone
             display: inline-block
+            width: 56%
             img 
-                display: inline-block
-                margin-top: 24px
-                margin-left: 268px
+                    display: inline-block
+                    margin-top: 24px
+                    margin-left: 366px
             &:hover img 
                 animation: 1s phone-shake
             span
@@ -426,12 +429,13 @@ body
                 text-align: center
                 float: right
                 margin-top: 30px
-                margin-right: 12px
+                margin-right: 46px
         .top_menu
+            margin-left: 57px
             .img_top_menu img 
                 position: absolute
-                bottom: 355px
-                left: -1px
+                bottom: 212px
+                left: 89px
             ul
                 display: inline-flex
                 list-style: none
@@ -443,7 +447,7 @@ body
                 display: inline-flex
                 background-color:  #f39524
                 box-shadow: 1px 2px 1px 0px rgba(5, 4, 5, 0.24)
-                width: 96%
+                width: 93.5%
                 margin-left: 42px
                 height: 84px
                 border-radius: 40px
@@ -505,12 +509,13 @@ body
                 input[type="search"]
                     border: 0
                     border-radius: 30px
-                    background-color:  #eeeeee
-                    box-shadow: 1px 2px 1px 0px rgba(5, 4, 5, 0.22);
+                    background-color: #eee
+                    -webkit-box-shadow: 1px 2px 1px 0 rgba(5,4,5,.22)
+                    box-shadow: 1px 2px 1px 0 rgba(5,4,5,.22)
                     width: 206px
                     text-indent: 20px
                     height: 52px
-                    margin-left: 54px
+                    margin-left: 34px
                     margin-top: 4px
                 .search img
                     margin-left: -54px
@@ -522,18 +527,20 @@ body
                     padding: 12px
 
 .text_fon
-    background: url('../img/1.png')
+    background: url(../img/1.png)
     width: 50%
-    margin-top: 140px
-    padding-left: 20px
+    margin-top: 82px
     border-radius: 10px
+    margin-left: 54px
+    padding: 0px 0px 0px 28px
     h1
         font-family: Roboto
-        color:  #ffffff
+        color: #fff
         font-size: 48px
         font-weight: 700
         text-align: left
-        text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.35)
+        padding: 3px 0px 0px 5px
+        text-shadow: 1px 3px 5px rgba(0,0,0,.35)
                     
 .middle_buy 
     background: #fff
@@ -541,12 +548,12 @@ body
     padding-bottom: 53px
     .buy
         div    
-            margin-right: 32px;
-            display: inline-block;
+            margin-right: 33px
+            display: inline-block
             margin-top: 8px
             width: 198px
             img
-                margin-left: 3px
+                margin-left: 29px
             &:last-child
                 margin-right: 0
             p 
@@ -561,7 +568,7 @@ body
                 border: 0
                 width: 183px
                 height: 50px
-                margin-left: 9px
+                margin-left: 39px
                 font-size: 17px
                 margin-top: -12px
                 &:hover
@@ -575,11 +582,12 @@ body
     height: 980px
     padding-top: 10px
     img
-            margin-bottom: 5px
-            margin-left: 110px
+            margin-bottom: 10px
+            margin-left: 140px
             width: 916px
     .maps
-            margin-top: 33px
+            margin-top: 29px
+            margin-left: 29px
     .region_t
         h1
             font-family: Roboto
@@ -591,10 +599,10 @@ body
             text-align: center
     .region__text
         background-color: #fff
-        width: 84%
-        margin-left: 113px
+        width: 76.3%
+        margin-left: 142px
         height: 268px
-        padding-top: 9px
+        padding-top: 6px
         div
             display: inline-block
             margin-left: 4px
@@ -626,7 +634,7 @@ body
             text-align: center
         div
             width: 300px
-            margin-left: 475px
+            margin-left: 504px
             margin-top: -5px
             a
                 font-family: Roboto
@@ -646,9 +654,10 @@ body
 .galerey__photo
     background-color: #fff
     padding-bottom: 39px
+    padding-top: 1px
     .photo_g
         margin-top: 41px
-        margin-left: 88px
+        margin-left: 120px
         div
             margin-top: 5px
             img
@@ -660,8 +669,15 @@ body
 .footer
     background-color:  #0b0a0a
     height: 329px
+    margin-top: -2px
     .footer__nav
         div
+            display: inline-block
+            margin-right: 35px
+            padding-left: 46px
+            vertical-align: top
+            &:nth-child(n2)
+                margin-right: 20px
             h1
                 margin-right: 20px
                 font-family: Roboto
